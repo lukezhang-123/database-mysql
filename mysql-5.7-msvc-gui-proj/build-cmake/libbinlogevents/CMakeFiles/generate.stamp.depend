@@ -1,0 +1,11 @@
+# CMake generation dependency list for this directory.
+D:/Program/Microsoft_Visual_Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CheckFunctionExists.cmake
+D:/Program/Microsoft_Visual_Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CheckIncludeFile.cmake
+D:/Program/Microsoft_Visual_Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CheckIncludeFileCXX.cmake
+D:/Program/Microsoft_Visual_Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CheckIncludeFiles.cmake
+D:/Program/Microsoft_Visual_Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CheckSymbolExists.cmake
+D:/Program/Microsoft_Visual_Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CheckTypeSize.cmake
+D:/Program/Microsoft_Visual_Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/TestBigEndian.cmake
+D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/libbinlogevents/CMakeLists.txt
+D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/libbinlogevents/binlog_config.h.cmake
+D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/libbinlogevents/configure.cmake

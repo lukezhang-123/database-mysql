@@ -1,0 +1,8 @@
+# CMake generation dependency list for this directory.
+D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/packaging/rpm-common/CMakeLists.txt
+D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/packaging/rpm-common/filter-provides.sh
+D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/packaging/rpm-common/filter-requires.sh
+D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/packaging/rpm-common/my.cnf.in
+D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/packaging/rpm-common/my_config.h
+D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/packaging/rpm-common/mysql.logrotate.in
+D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/packaging/rpm-common/mysql_config.sh

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\CMakeFiles\636ddf91d4cfff3b5e33b6927dde8fc6\imported_crypto_location.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\CMakeFiles\imported_crypto_location" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{6E8EE932-01A1-3A34-87BA-625B2687DB10}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

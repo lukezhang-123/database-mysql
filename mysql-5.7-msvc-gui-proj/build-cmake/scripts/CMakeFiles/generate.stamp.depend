@@ -1,0 +1,5 @@
+# CMake generation dependency list for this directory.
+D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/scripts/CMakeLists.txt
+D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/scripts/mysql_config.pl.in
+D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/scripts/mysqld_multi.sh
+D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/scripts/mysqldumpslow.sh

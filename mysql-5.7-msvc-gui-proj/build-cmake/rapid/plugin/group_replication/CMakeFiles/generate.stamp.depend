@@ -1,0 +1,9 @@
+# CMake generation dependency list for this directory.
+D:/Program/Microsoft_Visual_Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CheckSymbolExists.cmake
+D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/cmake/compile_flags.cmake
+D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/cmake/save_archive_location.cmake.in
+D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/rapid/plugin/group_replication/CMakeLists.txt
+D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/rapid/plugin/group_replication/configure.cmake
+D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/rapid/plugin/group_replication/mysql_gcs.h.cmake
+D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/rapid/plugin/group_replication/rpcgen.cmake
+D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/rapid/plugin/group_replication/xcom.h.cmake

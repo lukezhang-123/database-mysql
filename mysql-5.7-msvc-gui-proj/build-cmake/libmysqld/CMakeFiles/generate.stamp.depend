@@ -1,0 +1,11 @@
+# CMake generation dependency list for this directory.
+D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/cmake/bison.cmake
+D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/cmake/compile_flags.cmake
+D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/cmake/configurable_file_content.in
+D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/cmake/merge_archives.cmake.in
+D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/cmake/save_archive_location.cmake.in
+D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/libmysqld/CMakeLists.txt
+D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/sql/sql_hints.yy.cc
+D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/sql/sql_hints.yy.h
+D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/sql/sql_yacc.cc
+D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/sql/sql_yacc.h

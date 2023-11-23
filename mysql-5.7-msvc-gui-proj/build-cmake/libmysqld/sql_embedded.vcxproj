@@ -1,0 +1,695 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A6A85DD1-A533-3054-9547-DB48EFF3DB30}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>sql_embedded</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\archive_output_directory\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">sql_embedded.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">sql_embedded</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\archive_output_directory\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">sql_embedded.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">sql_embedded</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\archive_output_directory\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">sql_embedded.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">sql_embedded</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\archive_output_directory\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">sql_embedded.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">sql_embedded</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\rapidjson\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libbinlogevents\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libbinlogevents\export;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libmysql;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libbinlogevents\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libmysqld;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\auth;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\conn_handler;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libmysqld;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\sql;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\regex;C:\Program Files\OpenSSL-Win64\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\backup;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/extra/lz4/lz4-1.9.4/lib" /external:I "D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/build-cmake/extra/zlib/zlib-1.2.13" /external:I "D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/extra/zlib/zlib-1.2.13" /external:I "D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/include/boost_1_59_0/patches" /external:I "D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/boost/boost_1_59_0"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4800;4805;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4099</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;ENABLED_DEBUG_SYNC;SAFE_MUTEX;_VARIADIC_MAX=10;HAVE_STATIC_OPENSSL;HAVE_OPENSSL;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;HAVE_TLSv13;MYSQL_SERVER;EMBEDDED_LIBRARY;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;ENABLED_DEBUG_SYNC;SAFE_MUTEX;_VARIADIC_MAX=10;HAVE_STATIC_OPENSSL;HAVE_OPENSSL;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;HAVE_TLSv13;MYSQL_SERVER;EMBEDDED_LIBRARY;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\rapidjson\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libbinlogevents\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libbinlogevents\export;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libmysql;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libbinlogevents\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libmysqld;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\auth;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\conn_handler;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libmysqld;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\sql;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\regex;C:\Program Files\OpenSSL-Win64\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\backup;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\lz4\lz4-1.9.4\lib;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\extra\zlib\zlib-1.2.13;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\zlib\zlib-1.2.13;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\include\boost_1_59_0\patches;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\boost\boost_1_59_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\rapidjson\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libbinlogevents\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libbinlogevents\export;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libmysql;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libbinlogevents\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libmysqld;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\auth;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\conn_handler;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libmysqld;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\sql;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\regex;C:\Program Files\OpenSSL-Win64\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\backup;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\lz4\lz4-1.9.4\lib;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\extra\zlib\zlib-1.2.13;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\zlib\zlib-1.2.13;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\include\boost_1_59_0\patches;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\boost\boost_1_59_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -DTARGET_NAME=sql_embedded -DTARGET_LOC=D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/build-cmake/archive_output_directory/Debug/sql_embedded.lib -DCFG_INTDIR=$(Configuration) -P D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/build-cmake/archive_output_directory/lib_location_sql_embedded.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\rapidjson\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libbinlogevents\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libbinlogevents\export;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libmysql;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libbinlogevents\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libmysqld;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\auth;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\conn_handler;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libmysqld;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\sql;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\regex;C:\Program Files\OpenSSL-Win64\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\backup;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/extra/lz4/lz4-1.9.4/lib" /external:I "D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/build-cmake/extra/zlib/zlib-1.2.13" /external:I "D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/extra/zlib/zlib-1.2.13" /external:I "D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/include/boost_1_59_0/patches" /external:I "D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/boost/boost_1_59_0"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4800;4805;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4099</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_VARIADIC_MAX=10;HAVE_STATIC_OPENSSL;HAVE_OPENSSL;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;HAVE_TLSv13;MYSQL_SERVER;EMBEDDED_LIBRARY;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_VARIADIC_MAX=10;HAVE_STATIC_OPENSSL;HAVE_OPENSSL;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;HAVE_TLSv13;MYSQL_SERVER;EMBEDDED_LIBRARY;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\rapidjson\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libbinlogevents\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libbinlogevents\export;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libmysql;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libbinlogevents\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libmysqld;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\auth;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\conn_handler;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libmysqld;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\sql;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\regex;C:\Program Files\OpenSSL-Win64\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\backup;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\lz4\lz4-1.9.4\lib;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\extra\zlib\zlib-1.2.13;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\zlib\zlib-1.2.13;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\include\boost_1_59_0\patches;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\boost\boost_1_59_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\rapidjson\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libbinlogevents\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libbinlogevents\export;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libmysql;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libbinlogevents\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libmysqld;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\auth;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\conn_handler;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libmysqld;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\sql;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\regex;C:\Program Files\OpenSSL-Win64\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\backup;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\lz4\lz4-1.9.4\lib;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\extra\zlib\zlib-1.2.13;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\zlib\zlib-1.2.13;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\include\boost_1_59_0\patches;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\boost\boost_1_59_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -DTARGET_NAME=sql_embedded -DTARGET_LOC=D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/build-cmake/archive_output_directory/Release/sql_embedded.lib -DCFG_INTDIR=$(Configuration) -P D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/build-cmake/archive_output_directory/lib_location_sql_embedded.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\rapidjson\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libbinlogevents\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libbinlogevents\export;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libmysql;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libbinlogevents\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libmysqld;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\auth;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\conn_handler;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libmysqld;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\sql;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\regex;C:\Program Files\OpenSSL-Win64\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\backup;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/extra/lz4/lz4-1.9.4/lib" /external:I "D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/build-cmake/extra/zlib/zlib-1.2.13" /external:I "D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/extra/zlib/zlib-1.2.13" /external:I "D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/include/boost_1_59_0/patches" /external:I "D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/boost/boost_1_59_0"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4800;4805;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4099</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_VARIADIC_MAX=10;HAVE_STATIC_OPENSSL;HAVE_OPENSSL;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;HAVE_TLSv13;MYSQL_SERVER;EMBEDDED_LIBRARY;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_VARIADIC_MAX=10;HAVE_STATIC_OPENSSL;HAVE_OPENSSL;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;HAVE_TLSv13;MYSQL_SERVER;EMBEDDED_LIBRARY;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\rapidjson\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libbinlogevents\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libbinlogevents\export;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libmysql;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libbinlogevents\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libmysqld;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\auth;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\conn_handler;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libmysqld;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\sql;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\regex;C:\Program Files\OpenSSL-Win64\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\backup;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\lz4\lz4-1.9.4\lib;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\extra\zlib\zlib-1.2.13;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\zlib\zlib-1.2.13;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\include\boost_1_59_0\patches;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\boost\boost_1_59_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\rapidjson\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libbinlogevents\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libbinlogevents\export;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libmysql;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libbinlogevents\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libmysqld;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\auth;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\conn_handler;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libmysqld;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\sql;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\regex;C:\Program Files\OpenSSL-Win64\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\backup;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\lz4\lz4-1.9.4\lib;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\extra\zlib\zlib-1.2.13;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\zlib\zlib-1.2.13;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\include\boost_1_59_0\patches;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\boost\boost_1_59_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -DTARGET_NAME=sql_embedded -DTARGET_LOC=D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/build-cmake/archive_output_directory/MinSizeRel/sql_embedded.lib -DCFG_INTDIR=$(Configuration) -P D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/build-cmake/archive_output_directory/lib_location_sql_embedded.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\rapidjson\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libbinlogevents\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libbinlogevents\export;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libmysql;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libbinlogevents\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libmysqld;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\auth;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\conn_handler;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libmysqld;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\sql;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\regex;C:\Program Files\OpenSSL-Win64\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\backup;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/extra/lz4/lz4-1.9.4/lib" /external:I "D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/build-cmake/extra/zlib/zlib-1.2.13" /external:I "D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/extra/zlib/zlib-1.2.13" /external:I "D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/include/boost_1_59_0/patches" /external:I "D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/boost/boost_1_59_0"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4800;4805;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4099</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_VARIADIC_MAX=10;HAVE_STATIC_OPENSSL;HAVE_OPENSSL;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;HAVE_TLSv13;MYSQL_SERVER;EMBEDDED_LIBRARY;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_VARIADIC_MAX=10;HAVE_STATIC_OPENSSL;HAVE_OPENSSL;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;HAVE_TLSv13;MYSQL_SERVER;EMBEDDED_LIBRARY;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\rapidjson\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libbinlogevents\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libbinlogevents\export;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libmysql;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libbinlogevents\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libmysqld;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\auth;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\conn_handler;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libmysqld;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\sql;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\regex;C:\Program Files\OpenSSL-Win64\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\backup;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\lz4\lz4-1.9.4\lib;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\extra\zlib\zlib-1.2.13;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\zlib\zlib-1.2.13;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\include\boost_1_59_0\patches;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\boost\boost_1_59_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\rapidjson\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libbinlogevents\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libbinlogevents\export;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libmysql;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libbinlogevents\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libmysqld;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\auth;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\conn_handler;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libmysqld;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\sql;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\regex;C:\Program Files\OpenSSL-Win64\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\backup;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\lz4\lz4-1.9.4\lib;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\extra\zlib\zlib-1.2.13;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\zlib\zlib-1.2.13;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\include\boost_1_59_0\patches;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\boost\boost_1_59_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -DTARGET_NAME=sql_embedded -DTARGET_LOC=D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/build-cmake/archive_output_directory/RelWithDebInfo/sql_embedded.lib -DCFG_INTDIR=$(Configuration) -P D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/build-cmake/archive_output_directory/lib_location_sql_embedded.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\CMakeFiles\35de7c7d23b87c57f63638543f66738e\lex_token.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating lex_token.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\sql\Debug\gen_lex_token.exe &gt; lex_token.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\sql\Debug\gen_lex_token.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libmysqld\lex_token.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating lex_token.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\sql\Release\gen_lex_token.exe &gt; lex_token.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\sql\Release\gen_lex_token.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libmysqld\lex_token.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating lex_token.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\sql\MinSizeRel\gen_lex_token.exe &gt; lex_token.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\sql\MinSizeRel\gen_lex_token.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libmysqld\lex_token.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating lex_token.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\sql\RelWithDebInfo\gen_lex_token.exe &gt; lex_token.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\sql\RelWithDebInfo\gen_lex_token.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libmysqld\lex_token.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libmysqld\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/libmysqld/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -SD:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj -BD:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/build-cmake --check-stamp-file D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/build-cmake/libmysqld/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\bison.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\compile_flags.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\configurable_file_content.in;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\merge_archives.cmake.in;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\save_archive_location.cmake.in;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_hints.yy.cc;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_hints.yy.h;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_yacc.cc;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_yacc.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libmysqld\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/libmysqld/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -SD:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj -BD:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/build-cmake --check-stamp-file D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/build-cmake/libmysqld/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\bison.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\compile_flags.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\configurable_file_content.in;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\merge_archives.cmake.in;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\save_archive_location.cmake.in;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_hints.yy.cc;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_hints.yy.h;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_yacc.cc;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_yacc.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libmysqld\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/libmysqld/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -SD:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj -BD:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/build-cmake --check-stamp-file D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/build-cmake/libmysqld/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\bison.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\compile_flags.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\configurable_file_content.in;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\merge_archives.cmake.in;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\save_archive_location.cmake.in;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_hints.yy.cc;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_hints.yy.h;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_yacc.cc;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_yacc.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libmysqld\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/libmysqld/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -SD:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj -BD:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/build-cmake --check-stamp-file D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/build-cmake/libmysqld/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\bison.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\compile_flags.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\configurable_file_content.in;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\merge_archives.cmake.in;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\save_archive_location.cmake.in;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_hints.yy.cc;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_hints.yy.h;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_yacc.cc;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_yacc.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libmysqld\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libmysqld\emb_qcache.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libmysqld\lib_sql.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libmysqld\libmysqld.c" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\sql\sql_builtin.cc" />
+    <ClInclude Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libmysqld\sql_yacc.h" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libmysqld\sql_yacc.cc" />
+    <ClInclude Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libmysqld\sql_hints.yy.h" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libmysqld\sql_hints.yy.cc" />
+    <ClInclude Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libmysqld\lex_hash.h" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\lz4\lz4-1.9.4\lib\xxhash.c">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\lz4\lz4-1.9.4\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ScanSourceforModuleDependencies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ScanSourceforModuleDependencies>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions);XXH_NAMESPACE=MY_</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\lz4\lz4-1.9.4\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ScanSourceforModuleDependencies Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ScanSourceforModuleDependencies>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(PreprocessorDefinitions);XXH_NAMESPACE=MY_</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\lz4\lz4-1.9.4\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ScanSourceforModuleDependencies Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</ScanSourceforModuleDependencies>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(PreprocessorDefinitions);XXH_NAMESPACE=MY_</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\lz4\lz4-1.9.4\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ScanSourceforModuleDependencies Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</ScanSourceforModuleDependencies>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(PreprocessorDefinitions);XXH_NAMESPACE=MY_</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\client\get_password.c" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libmysql\errmsg.c" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libmysql\libmysql.c" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql-common\client.c" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql-common\client_plugin.c" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql-common\my_time.c" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql-common\my_user.c" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql-common\pack.c" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql-common\sql_string.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libbinlogevents\src\statement_events.cpp" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libbinlogevents\src\control_events.cpp" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libbinlogevents\src\load_data_events.cpp" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libbinlogevents\src\rows_event.cpp" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libbinlogevents\src\binlog_event.cpp" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libbinlogevents\src\binary_log_funcs.cpp" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libbinlogevents\src\uuid.cpp" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\binlog.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\event_parse_data.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\log_event.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\mysqld_thd_manager.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\rpl_filter.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\rpl_injector.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\rpl_record.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\rpl_reporting.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\rpl_utility.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\rpl_gtid_misc.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\rpl_gtid_sid_map.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\rpl_gtid_set.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\rpl_gtid_specification.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\rpl_gtid_state.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\rpl_gtid_owned.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\rpl_gtid_execution.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\rpl_gtid_mutex_cond_array.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\rpl_gtid_persist.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\rpl_table_access.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\rpl_context.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\rpl_trx_boundary_parser.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\abstract_query_plan.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\auth\sql_authentication.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\auth\sql_auth_cache.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\auth\sql_authorization.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\auth\sql_user_table.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\auth\sql_user.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\auth\password.c" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\auth\password_policy_service.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\auth\sql_security_ctx.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\auth\service_security_context.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\keyring_service.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\ssl_wrapper_service.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\bootstrap.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\conn_handler\connection_handler_manager.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\datadict.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\debug_sync.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\derror.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\discover.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\field.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\field_conv.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\filesort.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\filesort_utils.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\aggregate_check.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\geometry_rtree.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\gstream.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\handler.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\hostname.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\init.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\item.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\item_buff.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\item_cmpfunc.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\item_create.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\item_func.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\item_geofunc.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\item_geofunc_buffer.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\item_geofunc_internal.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\item_geofunc_relchecks.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\item_geofunc_relchecks_bgwrap.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\item_geofunc_setops.cc">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <ScanSourceforModuleDependencies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ScanSourceforModuleDependencies>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <ScanSourceforModuleDependencies Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ScanSourceforModuleDependencies>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <ScanSourceforModuleDependencies Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</ScanSourceforModuleDependencies>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <ScanSourceforModuleDependencies Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</ScanSourceforModuleDependencies>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\item_json_func.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\item_row.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\item_strfunc.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\item_subselect.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\item_sum.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\item_timefunc.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\item_xmlfunc.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\item_inetfunc.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\json_dom.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\json_binary.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\json_path.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\key.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\keycaches.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\lock.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\locking_service.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\locks\shared_spin_lock.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\log.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\mdl.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\migrate_keyring.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\my_decimal.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\net_serv.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\opt_costconstantcache.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\opt_costconstants.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\opt_costmodel.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\opt_explain.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\opt_explain_traditional.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\opt_explain_json.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\opt_hints.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\opt_range.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\opt_statistics.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\opt_sum.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\opt_trace.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\opt_trace2server.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\parse_file.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\parse_tree_helpers.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\parse_tree_hints.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\parse_tree_items.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\parse_tree_node_base.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\parse_tree_nodes.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\select_lex_visitor.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\parser_service.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\partition_info.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\partitioning\partition_handler.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\procedure.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\protocol_classic.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\records.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\rpl_group_replication.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\rpl_handler.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\rpl_transaction_ctx.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\rpl_transaction_write_set_ctx.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\rpl_trx_tracking.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\rpl_write_set_handler.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\lz4;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\lz4\lz4-1.9.4\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ScanSourceforModuleDependencies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ScanSourceforModuleDependencies>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\lz4;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\lz4\lz4-1.9.4\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ScanSourceforModuleDependencies Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ScanSourceforModuleDependencies>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\lz4;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\lz4\lz4-1.9.4\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ScanSourceforModuleDependencies Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</ScanSourceforModuleDependencies>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\lz4;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\lz4\lz4-1.9.4\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ScanSourceforModuleDependencies Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</ScanSourceforModuleDependencies>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\rules_table_service.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\session_tracker.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\set_var.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sp.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sp_cache.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sp_head.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sp_instr.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sp_pcontext.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sp_rcontext.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\spatial.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\string_service.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_admin.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_alloc_error_handler.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_alter.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_alter_instance.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_analyse.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_base.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_bootstrap.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_initialize.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_cache.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_class.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_connect.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_crypt.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_cursor.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_data_change.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_db.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_delete.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_derived.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_digest.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_do.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_error.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_exception_handler.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_executor.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_get_diagnostics.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_handler.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_help.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_insert.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_join_buffer.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_lex.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_lex_hash.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_lex_hints.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_list.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_load.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_locale.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_manager.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_optimizer.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_parse.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_partition.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_partition_admin.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_planner.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_plugin.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_prepare.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_profile.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_query_rewrite.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_reload.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_rename.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_resolver.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_rewrite.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_select.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_servers.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_cmd_show.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_show.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_show_status.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_show_processlist.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_signal.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_state.c" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_table.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_tablespace.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_test.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_thd_internal_api.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_time.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_timer.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_tmp_table.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_trigger.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_truncate.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_udf.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_union.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_update.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_view.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\strfunc.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sys_vars.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sys_vars_resource_mgr.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\table.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\table_cache.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\table_trigger_dispatcher.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\tc_log.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\thr_malloc.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\transaction.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\transaction_info.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\trigger.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\trigger_creation_ctx.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\trigger_loader.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\trigger_chain.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\tztime.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\uniques.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\unireg.cc" />
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\xa.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\ZERO_CHECK.vcxproj">
+      <Project>{3439AEC2-D853-394C-BE25-3CCD0CE531BA}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\extra\GenError.vcxproj">
+      <Project>{1B794F15-BBB5-3FAD-B14D-97F7BC3C9B5D}</Project>
+      <Name>GenError</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\sql\GenServerSource.vcxproj">
+      <Project>{698B5536-8D30-32E0-8E88-02570C2474A8}</Project>
+      <Name>GenServerSource</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libmysqld\GenYaccEmbeddedSource.vcxproj">
+      <Project>{8C3548D8-5D18-3487-B6A6-606B25DEB785}</Project>
+      <Name>GenYaccEmbeddedSource</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\sql\gen_lex_hash.vcxproj">
+      <Project>{E0A23CFC-C86E-3967-844E-F438AB0C7D8C}</Project>
+      <Name>gen_lex_hash</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\sql\gen_lex_token.vcxproj">
+      <Project>{873599EF-6198-3378-AE86-B06D904E7849}</Project>
+      <Name>gen_lex_token</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
