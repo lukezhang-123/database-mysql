@@ -79,7 +79,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <AdditionalIncludeDirectories>D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\rapidjson\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libbinlogevents\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libbinlogevents\export;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libmysql;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libbinlogevents\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libmysqld;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\auth;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\conn_handler;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libmysqld;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\sql;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\regex;C:\Program Files\OpenSSL-Win64\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\backup;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/extra/lz4/lz4-1.9.4/lib" /external:I "D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/build-cmake/extra/zlib/zlib-1.2.13" /external:I "D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/extra/zlib/zlib-1.2.13" /external:I "D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/include/boost_1_59_0/patches" /external:I "D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/boost/boost_1_59_0"</AdditionalOptions>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/extra/lz4/lz4-1.9.4/lib" /external:I "D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/build-cmake/extra/zlib/zlib-1.2.13" /external:I "D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/extra/zlib/zlib-1.2.13" /external:I "D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/include/boost_1_59_0/patches" /external:I "D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/boost/boost_1_59_0" /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>OldStyle</DebugInformationFormat>
@@ -111,7 +111,8 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message></Message>
+      <Message>
+      </Message>
       <Command>setlocal
 D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -DTARGET_NAME=sql_embedded -DTARGET_LOC=D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/build-cmake/archive_output_directory/Debug/sql_embedded.lib -DCFG_INTDIR=$(Configuration) -P D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/build-cmake/archive_output_directory/lib_location_sql_embedded.cmake
 if %errorlevel% neq 0 goto :cmEnd
@@ -160,7 +161,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message></Message>
+      <Message>
+      </Message>
       <Command>setlocal
 D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -DTARGET_NAME=sql_embedded -DTARGET_LOC=D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/build-cmake/archive_output_directory/Release/sql_embedded.lib -DCFG_INTDIR=$(Configuration) -P D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/build-cmake/archive_output_directory/lib_location_sql_embedded.cmake
 if %errorlevel% neq 0 goto :cmEnd
@@ -210,7 +212,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message></Message>
+      <Message>
+      </Message>
       <Command>setlocal
 D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -DTARGET_NAME=sql_embedded -DTARGET_LOC=D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/build-cmake/archive_output_directory/MinSizeRel/sql_embedded.lib -DCFG_INTDIR=$(Configuration) -P D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/build-cmake/archive_output_directory/lib_location_sql_embedded.cmake
 if %errorlevel% neq 0 goto :cmEnd
@@ -259,7 +262,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message></Message>
+      <Message>
+      </Message>
       <Command>setlocal
 D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -DTARGET_NAME=sql_embedded -DTARGET_LOC=D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/build-cmake/archive_output_directory/RelWithDebInfo/sql_embedded.lib -DCFG_INTDIR=$(Configuration) -P D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/build-cmake/archive_output_directory/lib_location_sql_embedded.cmake
 if %errorlevel% neq 0 goto :cmEnd

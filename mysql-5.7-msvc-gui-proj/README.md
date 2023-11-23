@@ -13,3 +13,11 @@ mkdir build-cmake
 cd build-cmake
 cmake .. -DWITH_BOOST=..\boost\boost_1_59_0
 cmake --build . --config relwithdebinfo --target package
+
+#include "functional"  // std::binary_function
+sql\json_dom.h
+storage\myisam\sort.cc
+storage\innobase\sync\sync0debug.cc
+
+sql_embedded, sql 项目报错字符sql\sql_locale.cc要加 /utf-8
+

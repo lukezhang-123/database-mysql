@@ -49,6 +49,8 @@ Created 2012-08-21 Sunny Bains
 #include <algorithm>
 #include <iostream>
 
+#include "functional"
+
 #ifdef UNIV_DEBUG
 
 my_bool		srv_sync_debug;

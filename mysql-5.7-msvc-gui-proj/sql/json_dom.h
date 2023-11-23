@@ -34,8 +34,10 @@
 #include "sql_error.h"          // Sql_condition
 #include "prealloced_array.h"   // Prealloced_array
 
+
 #include <map>
 #include <string>
+#include "functional"
 
 class Json_dom;
 class Json_path;

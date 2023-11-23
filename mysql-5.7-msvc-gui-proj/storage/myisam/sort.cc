@@ -30,6 +30,7 @@
 #include "fulltext.h"
 #if defined(_WIN32)
 #include <fcntl.h>
+#include "functional"
 #else
 #include <stddef.h>
 #endif
