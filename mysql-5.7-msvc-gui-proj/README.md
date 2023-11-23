@@ -12,7 +12,7 @@ cd /d D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj
 mkdir build-cmake
 cd build-cmake
 cmake .. -DWITH_BOOST=..\boost\boost_1_59_0
-cmake --build . --config relwithdebinfo --target package
+vs 打开 MySQL.sln
 
 #include "functional"  // std::binary_function
 sql\json_dom.h
@@ -21,3 +21,15 @@ storage\innobase\sync\sync0debug.cc
 
 sql_embedded, sql 项目报错字符sql\sql_locale.cc要加 /utf-8
 
+在最上面的解决方案右键，生成解决方案，编译全部项目组件195个
+
+安装
+cd build-cmake
+cmake --install . --config Debug --prefix D:\tmp\mysql5.7-01
+
+打包
+cd build-cmake
+cpack  # _CPack_Packages\win64\ZIP\mysql-5.7.44-winx64  目录下是要打包的文件
+
+cpack -G ZIP --version
+cpack build-cmake/ -G ZIP --version
