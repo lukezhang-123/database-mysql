@@ -8,8 +8,8 @@ https://cdn.mysql.com//Downloads/MySQL-5.7/mysql-boost-5.7.44.tar.gz
 https://slproweb.com/download/Win64OpenSSL-1_1_1w.exe
 安装完openssl到默认配置，cmake自动识别
 
-cd /d D:\tmp\mysql-5.7.44
+cd /d D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj
 mkdir build-cmake
 cd build-cmake
-cmake .. -DWITH_BOOST=D:\tmp\mysql-5.7.44\boost\boost_1_59_0  # -DWITH_SSL=C:\Program Files\OpenSSL-Win64\include
+cmake .. -DWITH_BOOST=..\boost\boost_1_59_0
 cmake --build . --config relwithdebinfo --target package
