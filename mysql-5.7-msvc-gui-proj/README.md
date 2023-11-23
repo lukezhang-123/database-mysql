@@ -33,3 +33,10 @@ cpack  # _CPack_Packages\win64\ZIP\mysql-5.7.44-winx64  目录下是要打包的
 
 cpack -G ZIP --version
 cpack build-cmake/ -G ZIP --version
+
+编译安装
+https://downloads.mysql.com/docs/mysql-sourcebuild-excerpt-5.7-en.pdf
+
+查看可配置选项 -D参数
+cmake .. -L
+
