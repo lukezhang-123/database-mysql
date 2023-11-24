@@ -1,6 +1,16 @@
 ﻿.vs
 _CPack_Packages
-build-cmake
+
+CMakeFiles
+mysql-5.7-msvc-gui-proj/build-cmake/**/*.lib
+mysql-5.7-msvc-gui-proj/build-cmake/**/*.exe
+mysql-5.7-msvc-gui-proj/build-cmake/**/*.dll
+mysql-5.7-msvc-gui-proj/build-cmake/**/*.obj
+mysql-5.7-msvc-gui-proj/build-cmake/**/*.exp
+mysql-5.7-msvc-gui-proj/build-cmake/**/*.pdb
+mysql-5.7-msvc-gui-proj/build-cmake/**/*.log
+*.tlog
+
 
 
 

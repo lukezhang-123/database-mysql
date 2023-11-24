@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\rapid\plugin\x\mysqlxtest_src\common\utils_mysql_parsing.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\rapid\plugin\x\mysqlxtest_src\common\utils_string_parsing.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\rapid\plugin\x\mysqlxtest_src\message_formatter.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\rapid\plugin\x\mysqlxtest_src\mysql41_hash.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\rapid\plugin\x\mysqlxtest_src\mysqlx_charset.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\rapid\plugin\x\mysqlxtest_src\mysqlx_connection.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\rapid\plugin\x\mysqlxtest_src\mysqlx_protocol.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\rapid\plugin\x\mysqlxtest_src\mysqlx_resultset.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\rapid\plugin\x\mysqlxtest_src\mysqlx_row.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\rapid\plugin\x\mysqlxtest_src\mysqlx_session.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\rapid\plugin\x\mysqlxtest_src\mysqlxtest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\rapid\plugin\x\mysqlxtest_src\mysqlxtest_error_names.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\rapid\plugin\x\mysqlxtest_src\password_hasher.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\rapid\plugin\x\ngs\src\protocol_authentication.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\rapid\plugin\x\generated\protobuf\mysqlx.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\rapid\plugin\x\generated\protobuf\mysqlx_datatypes.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\rapid\plugin\x\generated\protobuf\mysqlx_connection.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\rapid\plugin\x\generated\protobuf\mysqlx_expect.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\rapid\plugin\x\generated\protobuf\mysqlx_expr.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\rapid\plugin\x\generated\protobuf\mysqlx_crud.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\rapid\plugin\x\generated\protobuf\mysqlx_sql.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\rapid\plugin\x\generated\protobuf\mysqlx_session.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\rapid\plugin\x\generated\protobuf\mysqlx_notice.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\rapid\plugin\x\generated\protobuf\mysqlx_resultset.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\CMakeFiles\e645995b8cc26a76039a08f427613e59\mysqlx.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\CMakeFiles\e645995b8cc26a76039a08f427613e59\mysqlx_datatypes.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\CMakeFiles\e645995b8cc26a76039a08f427613e59\mysqlx_connection.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\CMakeFiles\e645995b8cc26a76039a08f427613e59\mysqlx_expect.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\CMakeFiles\e645995b8cc26a76039a08f427613e59\mysqlx_expr.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\CMakeFiles\e645995b8cc26a76039a08f427613e59\mysqlx_crud.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\CMakeFiles\e645995b8cc26a76039a08f427613e59\mysqlx_sql.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\CMakeFiles\e645995b8cc26a76039a08f427613e59\mysqlx_session.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\CMakeFiles\e645995b8cc26a76039a08f427613e59\mysqlx_notice.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\CMakeFiles\e645995b8cc26a76039a08f427613e59\mysqlx_resultset.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\rapid\plugin\x\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\versioninfo_exe.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{6E8EE932-01A1-3A34-87BA-625B2687DB10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B161803E-881F-3A92-9940-CE96C4C0691D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,968 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{876CC8B3-14BA-3477-8CB4-3EC668B70BBE}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\rapidjson\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libbinlogevents\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libbinlogevents\export;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\lz4\lz4-1.9.4\lib;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\extra\zlib\zlib-1.2.13;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\zlib\zlib-1.2.13;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\rapidjson\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libbinlogevents\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libbinlogevents\export;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\lz4\lz4-1.9.4\lib;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\extra\zlib\zlib-1.2.13;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\zlib\zlib-1.2.13;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\rapidjson\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libbinlogevents\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libbinlogevents\export;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\lz4\lz4-1.9.4\lib;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\extra\zlib\zlib-1.2.13;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\zlib\zlib-1.2.13;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\rapidjson\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libbinlogevents\include;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\libbinlogevents\export;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\lz4\lz4-1.9.4\lib;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\extra\zlib\zlib-1.2.13;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\extra\zlib\zlib-1.2.13;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -SD:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj -BD:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/build-cmake --check-stamp-file D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/build-cmake/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakePushCheckState.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CPack.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CPackComponent.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckCCompilerFlag.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckCSourceRuns.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckCXXCompilerFlag.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckCXXSourceCompiles.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckCXXSourceRuns.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckFunctionExists.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckIncludeFileCXX.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckIncludeFiles.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckLibraryExists.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckSourceCompiles.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckStructHasMember.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckSymbolExists.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckTypeSize.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FindGit.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FindPackageMessage.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FindThreads.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Internal\CheckCompilerFlag.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Internal\CheckFlagCommonConfig.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Internal\CheckSourceRuns.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\TestBigEndian.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Templates\CPackConfig.cmake.in;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\VERSION;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\CMakeFiles\3.27.2-msvc1\CMakeCCompiler.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\CMakeFiles\3.27.2-msvc1\CMakeCXXCompiler.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\CMakeFiles\3.27.2-msvc1\CMakeRCCompiler.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\CMakeFiles\3.27.2-msvc1\CMakeSystem.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\find_libevent_version.c;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\info_macros.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\abi_check.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\boost.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\build_configurations\compiler_options.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\build_configurations\feature_set.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\character_sets.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\cmake_parse_arguments.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\compile_flags.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\compiler_bugs.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\cpack_source_ignore_files.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\cpu_info.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\curl.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\dtrace.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\floating_point.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\info_macros.cmake.in;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\install_layout.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\install_macros.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\ldap.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\libevent.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\libutils.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\lz4.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\maintainer.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\mysql_add_executable.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\mysql_version.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\os\Windows.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\os\WindowsCache.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\package_name.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\plugin.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\protobuf.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\readline.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\rpc.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\sasl.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\save_archive_location.cmake.in;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\ssl.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\tags.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\versioninfo.rc.in;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\zlib.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\config.h.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\configure.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\include\mysql_version.h.in;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_builtin.cc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -SD:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj -BD:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/build-cmake --check-stamp-file D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/build-cmake/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakePushCheckState.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CPack.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CPackComponent.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckCCompilerFlag.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckCSourceRuns.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckCXXCompilerFlag.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckCXXSourceCompiles.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckCXXSourceRuns.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckFunctionExists.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckIncludeFileCXX.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckIncludeFiles.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckLibraryExists.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckSourceCompiles.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckStructHasMember.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckSymbolExists.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckTypeSize.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FindGit.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FindPackageMessage.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FindThreads.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Internal\CheckCompilerFlag.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Internal\CheckFlagCommonConfig.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Internal\CheckSourceRuns.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\TestBigEndian.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Templates\CPackConfig.cmake.in;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\VERSION;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\CMakeFiles\3.27.2-msvc1\CMakeCCompiler.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\CMakeFiles\3.27.2-msvc1\CMakeCXXCompiler.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\CMakeFiles\3.27.2-msvc1\CMakeRCCompiler.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\CMakeFiles\3.27.2-msvc1\CMakeSystem.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\find_libevent_version.c;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\info_macros.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\abi_check.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\boost.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\build_configurations\compiler_options.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\build_configurations\feature_set.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\character_sets.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\cmake_parse_arguments.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\compile_flags.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\compiler_bugs.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\cpack_source_ignore_files.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\cpu_info.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\curl.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\dtrace.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\floating_point.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\info_macros.cmake.in;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\install_layout.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\install_macros.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\ldap.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\libevent.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\libutils.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\lz4.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\maintainer.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\mysql_add_executable.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\mysql_version.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\os\Windows.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\os\WindowsCache.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\package_name.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\plugin.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\protobuf.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\readline.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\rpc.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\sasl.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\save_archive_location.cmake.in;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\ssl.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\tags.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\versioninfo.rc.in;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\zlib.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\config.h.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\configure.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\include\mysql_version.h.in;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_builtin.cc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -SD:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj -BD:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/build-cmake --check-stamp-file D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/build-cmake/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakePushCheckState.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CPack.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CPackComponent.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckCCompilerFlag.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckCSourceRuns.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckCXXCompilerFlag.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckCXXSourceCompiles.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckCXXSourceRuns.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckFunctionExists.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckIncludeFileCXX.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckIncludeFiles.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckLibraryExists.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckSourceCompiles.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckStructHasMember.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckSymbolExists.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckTypeSize.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FindGit.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FindPackageMessage.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FindThreads.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Internal\CheckCompilerFlag.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Internal\CheckFlagCommonConfig.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Internal\CheckSourceRuns.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\TestBigEndian.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Templates\CPackConfig.cmake.in;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\VERSION;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\CMakeFiles\3.27.2-msvc1\CMakeCCompiler.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\CMakeFiles\3.27.2-msvc1\CMakeCXXCompiler.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\CMakeFiles\3.27.2-msvc1\CMakeRCCompiler.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\CMakeFiles\3.27.2-msvc1\CMakeSystem.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\find_libevent_version.c;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\info_macros.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\abi_check.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\boost.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\build_configurations\compiler_options.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\build_configurations\feature_set.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\character_sets.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\cmake_parse_arguments.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\compile_flags.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\compiler_bugs.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\cpack_source_ignore_files.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\cpu_info.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\curl.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\dtrace.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\floating_point.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\info_macros.cmake.in;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\install_layout.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\install_macros.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\ldap.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\libevent.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\libutils.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\lz4.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\maintainer.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\mysql_add_executable.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\mysql_version.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\os\Windows.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\os\WindowsCache.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\package_name.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\plugin.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\protobuf.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\readline.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\rpc.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\sasl.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\save_archive_location.cmake.in;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\ssl.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\tags.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\versioninfo.rc.in;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\zlib.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\config.h.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\configure.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\include\mysql_version.h.in;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_builtin.cc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -SD:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj -BD:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/build-cmake --check-stamp-file D:/proj/github/lukezhang-123/database-mysql/mysql-5.7-msvc-gui-proj/build-cmake/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakePushCheckState.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CPack.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CPackComponent.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckCCompilerFlag.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckCSourceRuns.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckCXXCompilerFlag.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckCXXSourceCompiles.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckCXXSourceRuns.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckFunctionExists.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckIncludeFileCXX.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckIncludeFiles.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckLibraryExists.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckSourceCompiles.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckStructHasMember.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckSymbolExists.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckTypeSize.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FindGit.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FindPackageMessage.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FindThreads.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Internal\CheckCompilerFlag.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Internal\CheckFlagCommonConfig.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Internal\CheckSourceRuns.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\TestBigEndian.cmake;D:\Program\Microsoft_Visual_Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Templates\CPackConfig.cmake.in;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\VERSION;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\CMakeFiles\3.27.2-msvc1\CMakeCCompiler.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\CMakeFiles\3.27.2-msvc1\CMakeCXXCompiler.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\CMakeFiles\3.27.2-msvc1\CMakeRCCompiler.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\CMakeFiles\3.27.2-msvc1\CMakeSystem.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\find_libevent_version.c;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\info_macros.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\abi_check.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\boost.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\build_configurations\compiler_options.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\build_configurations\feature_set.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\character_sets.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\cmake_parse_arguments.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\compile_flags.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\compiler_bugs.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\cpack_source_ignore_files.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\cpu_info.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\curl.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\dtrace.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\floating_point.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\info_macros.cmake.in;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\install_layout.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\install_macros.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\ldap.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\libevent.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\libutils.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\lz4.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\maintainer.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\mysql_add_executable.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\mysql_version.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\os\Windows.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\os\WindowsCache.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\package_name.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\plugin.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\protobuf.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\readline.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\rpc.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\sasl.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\save_archive_location.cmake.in;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\ssl.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\tags.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\versioninfo.rc.in;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\cmake\zlib.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\config.h.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\configure.cmake;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\include\mysql_version.h.in;D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\sql\sql_builtin.cc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\ZERO_CHECK.vcxproj">
+      <Project>{3439AEC2-D853-394C-BE25-3CCD0CE531BA}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\scripts\GenBootstrapPriv.vcxproj">
+      <Project>{7AA6600A-E2BF-35F4-895C-EBC1B49D1B7F}</Project>
+      <Name>GenBootstrapPriv</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\extra\GenError.vcxproj">
+      <Project>{1B794F15-BBB5-3FAD-B14D-97F7BC3C9B5D}</Project>
+      <Name>GenError</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\scripts\GenFixPrivs.vcxproj">
+      <Project>{C167868C-7AF5-3EE7-8747-B938E351A4EF}</Project>
+      <Name>GenFixPrivs</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\rapid\plugin\x\GenLiteProtos.vcxproj">
+      <Project>{58E5527A-1FB0-31F9-B60C-816D1A4AB531}</Project>
+      <Name>GenLiteProtos</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\scripts\GenSysSchema.vcxproj">
+      <Project>{7208E74C-53C1-398E-8C2B-B4EDEF0FC251}</Project>
+      <Name>GenSysSchema</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\INFO_BIN.vcxproj">
+      <Project>{52A76915-01F0-3DFC-93CF-8C8D44740BD8}</Project>
+      <Name>INFO_BIN</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\INFO_SRC.vcxproj">
+      <Project>{F60FB343-1BBB-30C6-96C8-DC0984268E32}</Project>
+      <Name>INFO_SRC</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\storage\archive\archive.vcxproj">
+      <Project>{000658A7-FE32-32EA-B6EE-E22A1BA7B245}</Project>
+      <Name>archive</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\storage\archive\archive_embedded.vcxproj">
+      <Project>{B0E8D954-569E-3F81-BE29-2467CF6FD8F8}</Project>
+      <Name>archive_embedded</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\plugin\audit_null\audit_null.vcxproj">
+      <Project>{35ACA4FC-B880-31E1-AA28-63A7BC9323C4}</Project>
+      <Name>audit_null</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\plugin\auth\auth.vcxproj">
+      <Project>{E407D0CC-BCF6-3F24-A292-09D96AF4A275}</Project>
+      <Name>auth</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\plugin\auth\auth_test_plugin.vcxproj">
+      <Project>{8BCFE8B7-2BDA-3CA0-8E1F-82FD17E6CF7A}</Project>
+      <Name>auth_test_plugin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libmysql\authentication_win\auth_win_client.vcxproj">
+      <Project>{31BFD6AA-1910-3312-81DC-9D9C417ECB0E}</Project>
+      <Name>auth_win_client</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\mysys\base64_test.vcxproj">
+      <Project>{09A78034-0E6B-3C3C-86C4-E3391BF411C8}</Project>
+      <Name>base64_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\unittest\mytap\t\basic-t.vcxproj">
+      <Project>{CF46D34A-0D9C-3282-8876-9C02BB9A047D}</Project>
+      <Name>basic-t</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\sql\binlog.vcxproj">
+      <Project>{954D1CBD-9885-32A0-AE4A-B229EC1F0527}</Project>
+      <Name>binlog</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libbinlogevents\src\binlogevents_static.vcxproj">
+      <Project>{AB5B6B02-7396-35FF-9794-82AD0D27842B}</Project>
+      <Name>binlogevents_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libbinlogstandalone\src\binlogstandalone_shared.vcxproj">
+      <Project>{1010A77E-BD99-3E4F-AAE4-E8F201E5F652}</Project>
+      <Name>binlogstandalone_shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libbinlogstandalone\src\binlogstandalone_static.vcxproj">
+      <Project>{40FA60DD-EF6F-3EB5-86FB-A47A89B79CE2}</Project>
+      <Name>binlogstandalone_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\storage\blackhole\blackhole.vcxproj">
+      <Project>{4FFE6743-DC83-3783-A6C6-C6A225BB3752}</Project>
+      <Name>blackhole</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\storage\blackhole\blackhole_embedded.vcxproj">
+      <Project>{20121B08-9DD0-303F-B279-0D5E635EBABB}</Project>
+      <Name>blackhole_embedded</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\testclients\bug25714.vcxproj">
+      <Project>{E955A4F0-66C0-39E9-A35F-A3B4ACEC13FD}</Project>
+      <Name>bug25714</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libmysql\clientlib.vcxproj">
+      <Project>{ED95E009-ADCB-3E8F-92AE-5827447CE541}</Project>
+      <Name>clientlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\extra\comp_err.vcxproj">
+      <Project>{7707FCE3-73B8-35D8-8E5A-9B3AE04FF74C}</Project>
+      <Name>comp_err</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\scripts\comp_sql.vcxproj">
+      <Project>{F6E54B49-3369-3D2B-B2ED-2DCD11F7B4DB}</Project>
+      <Name>comp_sql</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\plugin\connection_control\connection_control.vcxproj">
+      <Project>{2AD471D5-9FB9-3D75-8F56-20F083B7039F}</Project>
+      <Name>connection_control</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\storage\csv\csv.vcxproj">
+      <Project>{E39A683F-BD4C-3000-83FA-470381229F7F}</Project>
+      <Name>csv</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\storage\csv\csv_embedded.vcxproj">
+      <Project>{5109A03D-E987-3D14-B7C3-D4FAF467245B}</Project>
+      <Name>csv_embedded</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\plugin\daemon_example\daemon_example.vcxproj">
+      <Project>{C3666511-F77B-3F55-8FEC-47A470F0EB44}</Project>
+      <Name>daemon_example</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\dbug\dbug.vcxproj">
+      <Project>{A6A42531-DBC6-38EF-91AB-622C06544323}</Project>
+      <Name>dbug</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\client\echo.vcxproj">
+      <Project>{F63052D6-4AFA-300D-9D1E-836364068D70}</Project>
+      <Name>echo</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\extra\libevent\libevent-2.1.11-stable\event_core.vcxproj">
+      <Project>{F2E903DB-B9BC-3B93-B76F-5AE31723AF8E}</Project>
+      <Name>event_core</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\extra\libevent\libevent-2.1.11-stable\event_extra.vcxproj">
+      <Project>{57B7F6A1-616B-3F51-A472-D31625B8CB86}</Project>
+      <Name>event_extra</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\extra\libevent\libevent-2.1.11-stable\event_openssl.vcxproj">
+      <Project>{83E4E93E-9399-34F3-A741-08ABD69C3B84}</Project>
+      <Name>event_openssl</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\storage\example\example.vcxproj">
+      <Project>{EE7B0EA1-F975-3232-942D-1BCDFE37023E}</Project>
+      <Name>example</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\storage\federated\federated.vcxproj">
+      <Project>{1B2C9039-11C6-3B20-93B2-D2EFBE7F008E}</Project>
+      <Name>federated</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\storage\federated\federated_embedded.vcxproj">
+      <Project>{84EFC314-6386-3F2A-9C65-35C029EC69FC}</Project>
+      <Name>federated_embedded</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\plugin\fulltext\ftexample.vcxproj">
+      <Project>{4B95FB25-E1DF-3671-A8D7-C481DBDE74F6}</Project>
+      <Name>ftexample</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\sql\gen_lex_hash.vcxproj">
+      <Project>{E0A23CFC-C86E-3967-844E-F438AB0C7D8C}</Project>
+      <Name>gen_lex_hash</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\sql\gen_lex_token.vcxproj">
+      <Project>{873599EF-6198-3378-AE86-B06D904E7849}</Project>
+      <Name>gen_lex_token</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\rapid\plugin\group_replication\gr_unit_test_resource.vcxproj">
+      <Project>{40BA8233-1F19-3FDC-B3EA-858B038B74B0}</Project>
+      <Name>gr_unit_test_resource</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\rapid\plugin\group_replication\group_replication.vcxproj">
+      <Project>{3748D5D4-B14E-3ACC-A51E-954CC5E3DA74}</Project>
+      <Name>group_replication</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\storage\heap\heap.vcxproj">
+      <Project>{B35693F7-D287-3181-BF63-D9042448796B}</Project>
+      <Name>heap</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\storage\heap\heap_embedded.vcxproj">
+      <Project>{FC4F2AD4-CAC7-34B9-A130-EFFA503F4A5B}</Project>
+      <Name>heap_embedded</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\storage\heap\hp_test1.vcxproj">
+      <Project>{58363706-FFCA-39D2-927E-31287B989C45}</Project>
+      <Name>hp_test1</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\storage\heap\hp_test2.vcxproj">
+      <Project>{170B650A-C50C-3E59-808B-755DCF659C98}</Project>
+      <Name>hp_test2</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\storage\innobase\innobase.vcxproj">
+      <Project>{6CAF701A-7844-3F46-A8A4-FAA68340BDAF}</Project>
+      <Name>innobase</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\extra\innochecksum.vcxproj">
+      <Project>{1EEC6F8E-8992-318B-B420-DF5BEFCEB6F9}</Project>
+      <Name>innochecksum</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\plugin\keyring\keyring_file.vcxproj">
+      <Project>{1D731474-B146-3982-A707-3F7FA2CE3762}</Project>
+      <Name>keyring_file</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\rapid\plugin\keyring_udf\keyring_udf.vcxproj">
+      <Project>{2D48CEC9-BF36-3A52-BB47-E708BEE7E5CC}</Project>
+      <Name>keyring_udf</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libmysql\libmysql.vcxproj">
+      <Project>{0C27AECC-ADB8-398F-A82F-93204D1B99A7}</Project>
+      <Name>libmysql</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libmysql\libmysql_api_test.vcxproj">
+      <Project>{26F6ED23-4764-3A80-B20B-0C31BB301BC8}</Project>
+      <Name>libmysql_api_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libmysqld\libmysqld.vcxproj">
+      <Project>{C011DAED-6F1D-342B-B324-A0C5603D58EA}</Project>
+      <Name>libmysqld</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\sql\locking_service.vcxproj">
+      <Project>{08E95CBF-8976-3F5A-B531-494CD3FBA29C}</Project>
+      <Name>locking_service</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\extra\lz4_decompress.vcxproj">
+      <Project>{8A329AFE-09BC-3FEA-BE37-D775AF4AE267}</Project>
+      <Name>lz4_decompress</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\lz4_lib.vcxproj">
+      <Project>{176C77D6-BA27-37C3-A3A9-ADA0B074B5D4}</Project>
+      <Name>lz4_lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\sql\master.vcxproj">
+      <Project>{F365ED13-9EF4-304D-A610-A0BCED29D078}</Project>
+      <Name>master</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\extra\my_print_defaults.vcxproj">
+      <Project>{9FC3493B-D459-37D1-877C-3C70363F80B3}</Project>
+      <Name>my_print_defaults</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\mysql-test\lib\My\SafeProcess\my_safe_kill.vcxproj">
+      <Project>{8984B089-E10C-396E-9BE7-9CDCCC1116B3}</Project>
+      <Name>my_safe_kill</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\mysql-test\lib\My\SafeProcess\my_safe_process.vcxproj">
+      <Project>{BC3DB922-04B6-30A5-A6D2-72AB95DEB9C2}</Project>
+      <Name>my_safe_process</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\storage\myisam\myisam.vcxproj">
+      <Project>{14F6C4CD-B9B4-3ED1-8688-7BE91FDC14A6}</Project>
+      <Name>myisam</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\storage\myisam\myisam_embedded.vcxproj">
+      <Project>{BA75A288-DC81-3151-B95C-04BE904EC416}</Project>
+      <Name>myisam_embedded</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\storage\myisam\myisam_ftdump.vcxproj">
+      <Project>{1ED0312F-8C7F-3139-8FF3-A427AD4B40D3}</Project>
+      <Name>myisam_ftdump</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\storage\myisam\myisamchk.vcxproj">
+      <Project>{93A89DE4-3D4B-37CE-A8FF-B3BF443A20E8}</Project>
+      <Name>myisamchk</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\storage\myisam\myisamlog.vcxproj">
+      <Project>{F59AB717-B513-305C-B9F7-C35C1321CD87}</Project>
+      <Name>myisamlog</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\storage\myisammrg\myisammrg.vcxproj">
+      <Project>{251BC5F2-4E3F-34AE-888B-A2639CDA03C2}</Project>
+      <Name>myisammrg</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\storage\myisammrg\myisammrg_embedded.vcxproj">
+      <Project>{205CD855-571E-3DA9-945F-18D5DA65B799}</Project>
+      <Name>myisammrg_embedded</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\storage\myisam\myisampack.vcxproj">
+      <Project>{0CB05731-D852-319C-AA46-21D7B48AFD27}</Project>
+      <Name>myisampack</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\client\mysql.vcxproj">
+      <Project>{828EFFF6-C686-33FA-9E6C-145B45C565A9}</Project>
+      <Name>mysql</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\testclients\mysql_client_test.vcxproj">
+      <Project>{9CDC9DD3-C426-344F-B3D2-C67BFFD90DA9}</Project>
+      <Name>mysql_client_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libmysqld\examples\mysql_client_test_embedded.vcxproj">
+      <Project>{5BA97822-0A03-3E18-B375-FB96EB8739E7}</Project>
+      <Name>mysql_client_test_embedded</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\client\mysql_config_editor.vcxproj">
+      <Project>{95D95C44-3B4F-348D-9933-7349BAF7BC19}</Project>
+      <Name>mysql_config_editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libmysqld\examples\mysql_embedded.vcxproj">
+      <Project>{56BC0F36-0918-37E2-B568-1292CCC72FD6}</Project>
+      <Name>mysql_embedded</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\plugin\auth\mysql_no_login.vcxproj">
+      <Project>{6798EC7E-7C21-3721-8A07-F6B81D3EA78F}</Project>
+      <Name>mysql_no_login</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\client\mysql_plugin.vcxproj">
+      <Project>{970031C9-B6AD-3301-8D79-C0A63A749822}</Project>
+      <Name>mysql_plugin</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\client\mysql_secure_installation.vcxproj">
+      <Project>{5ED25F91-8644-3B74-84BA-0DEA2AE1C725}</Project>
+      <Name>mysql_secure_installation</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\client\mysql_ssl_rsa_setup.vcxproj">
+      <Project>{AD616246-DB67-377E-B166-42B08C37DA41}</Project>
+      <Name>mysql_ssl_rsa_setup</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\sql\mysql_tzinfo_to_sql.vcxproj">
+      <Project>{9E37CDF4-F37B-3D83-A547-78D5FD3D406E}</Project>
+      <Name>mysql_tzinfo_to_sql</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\client\mysql_upgrade.vcxproj">
+      <Project>{140FDF21-E15D-3152-BC12-B586BACEDB1B}</Project>
+      <Name>mysql_upgrade</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\client\mysqladmin.vcxproj">
+      <Project>{B1475B61-F3CB-3DB7-A2C8-A18E4CA56084}</Project>
+      <Name>mysqladmin</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\client\mysqlbinlog.vcxproj">
+      <Project>{073AE50F-E6EE-3D84-BBFA-2EC4ECB5CC97}</Project>
+      <Name>mysqlbinlog</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\client\mysqlcheck.vcxproj">
+      <Project>{39F40D25-4AA0-35A5-9B00-D0BAFE19973F}</Project>
+      <Name>mysqlcheck</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\client\mysqlcheck_core.vcxproj">
+      <Project>{95AFF30F-0D9A-3BDB-A161-D0A397E6375C}</Project>
+      <Name>mysqlcheck_core</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libmysql\mysqlclient.vcxproj">
+      <Project>{9D8199FF-5654-3165-A4D0-3074CEBD538F}</Project>
+      <Name>mysqlclient</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\sql\mysqld.vcxproj">
+      <Project>{FE84BE7D-403E-3B14-8B0A-7577FCCE6D60}</Project>
+      <Name>mysqld</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\client\mysqldump.vcxproj">
+      <Project>{E4B97AB2-FC3C-3EAC-B027-004882D837BD}</Project>
+      <Name>mysqldump</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\client\mysqlimport.vcxproj">
+      <Project>{9304F55F-5028-3D13-BCB9-AD1B80CCD02E}</Project>
+      <Name>mysqlimport</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\client\dump\mysqlpump.vcxproj">
+      <Project>{443BCF3B-6DF1-3A44-BBDD-6F27667359BA}</Project>
+      <Name>mysqlpump</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\client\dump\mysqlpump_lib.vcxproj">
+      <Project>{CC54A3A2-945D-3577-B36F-D4CF331C423E}</Project>
+      <Name>mysqlpump_lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libmysqld\mysqlserver.vcxproj">
+      <Project>{8D7C13B7-498E-35D9-9A18-0D4A31A7EFAA}</Project>
+      <Name>mysqlserver</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libservices\mysqlservices.vcxproj">
+      <Project>{FDB2FEE4-6707-3E26-84F0-B2184C4FA20B}</Project>
+      <Name>mysqlservices</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\client\mysqlshow.vcxproj">
+      <Project>{AEC73397-BA87-3D9C-AA65-DD93BBCBE9F2}</Project>
+      <Name>mysqlshow</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\client\mysqlslap.vcxproj">
+      <Project>{932CAAE9-3B8E-3E7E-BE78-56FC693EB990}</Project>
+      <Name>mysqlslap</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\client\mysqltest.vcxproj">
+      <Project>{077E1CE5-9CBE-3ACF-85F9-B7DB4524C5EA}</Project>
+      <Name>mysqltest</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libmysqld\examples\mysqltest_embedded.vcxproj">
+      <Project>{EF2218D8-B45F-3FC2-9ECD-ACF234B98EC1}</Project>
+      <Name>mysqltest_embedded</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\rapid\plugin\x\mysqlx.vcxproj">
+      <Project>{12D23C06-032D-3410-8AF2-F5B4C4769C3E}</Project>
+      <Name>mysqlx</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\rapid\plugin\x\mysqlxtest.vcxproj">
+      <Project>{D62A4794-9EBA-33C2-981E-208E5DA641FE}</Project>
+      <Name>mysqlxtest</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\mysys_ssl\mysys_ssl.vcxproj">
+      <Project>{FF303408-523D-3E36-AA5B-1FD03BC6F20B}</Project>
+      <Name>mysys_ssl</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\unittest\mytap\mytap.vcxproj">
+      <Project>{3680C912-9947-3D92-9171-9084BF026573}</Project>
+      <Name>mytap</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\plugin\fulltext\ngram_parser.vcxproj">
+      <Project>{043B4CA2-780D-3BAC-8DD3-19A879665F75}</Project>
+      <Name>ngram_parser</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\unittest\examples\no_plan-t.vcxproj">
+      <Project>{4ACBBC08-4E7D-3DAB-8DE8-4087247E27E1}</Project>
+      <Name>no_plan-t</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\storage\partition\partition.vcxproj">
+      <Project>{981281B4-0698-31FB-85A4-DA9C11FD8974}</Project>
+      <Name>partition</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\storage\partition\partition_embedded.vcxproj">
+      <Project>{E2AFAF7A-79A7-31A8-A1AE-B5CF165FD9FE}</Project>
+      <Name>partition_embedded</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\storage\perfschema\perfschema.vcxproj">
+      <Project>{D202A8E9-47F4-3458-9037-6EF2B6DBDDD3}</Project>
+      <Name>perfschema</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\extra\perror.vcxproj">
+      <Project>{86D02A66-B27F-36F2-A83C-33AC6C169206}</Project>
+      <Name>perror</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\storage\perfschema\unittest\pfs-t.vcxproj">
+      <Project>{C614A9F3-49EC-3DA5-B0A7-AAAF6B22A3A7}</Project>
+      <Name>pfs-t</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\storage\perfschema\unittest\pfs_account-oom-t.vcxproj">
+      <Project>{8EA03EBA-5291-3D61-A283-ABCB51ECFFC0}</Project>
+      <Name>pfs_account-oom-t</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\storage\perfschema\unittest\pfs_connect_attr-t.vcxproj">
+      <Project>{A7DA0C3A-69E0-3E3F-B554-86389587B602}</Project>
+      <Name>pfs_connect_attr-t</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\storage\perfschema\unittest\pfs_host-oom-t.vcxproj">
+      <Project>{6785310A-745F-31D6-AE07-56F193D856F4}</Project>
+      <Name>pfs_host-oom-t</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\storage\perfschema\unittest\pfs_instr-oom-t.vcxproj">
+      <Project>{98A45765-57C6-3FDC-8844-B14D80447CBE}</Project>
+      <Name>pfs_instr-oom-t</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\storage\perfschema\unittest\pfs_instr-t.vcxproj">
+      <Project>{0DBE4CEA-8204-39DE-876C-5D845B2D0037}</Project>
+      <Name>pfs_instr-t</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\storage\perfschema\unittest\pfs_instr_class-oom-t.vcxproj">
+      <Project>{989BA417-B372-3AC0-B6DB-1DA7D3B5D536}</Project>
+      <Name>pfs_instr_class-oom-t</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\storage\perfschema\unittest\pfs_instr_class-t.vcxproj">
+      <Project>{DC414A2E-790E-341A-A288-8F8F8C26EC95}</Project>
+      <Name>pfs_instr_class-t</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\storage\perfschema\unittest\pfs_misc-t.vcxproj">
+      <Project>{3AA2B0B6-DE93-329B-B825-92AE734DF55B}</Project>
+      <Name>pfs_misc-t</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\storage\perfschema\unittest\pfs_noop-t.vcxproj">
+      <Project>{76B91A6D-7784-34B0-8AD6-32C6648505D0}</Project>
+      <Name>pfs_noop-t</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\storage\perfschema\unittest\pfs_server_stubs.vcxproj">
+      <Project>{9F43CFFA-E9AE-3EF7-AFB3-317301F4FB6E}</Project>
+      <Name>pfs_server_stubs</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\storage\perfschema\unittest\pfs_user-oom-t.vcxproj">
+      <Project>{3794D536-1D0C-3FFC-90EE-2DDB5D6F25F2}</Project>
+      <Name>pfs_user-oom-t</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\plugin\auth\qa_auth_client.vcxproj">
+      <Project>{821277BF-8BFE-3671-95B4-562A0C920ED4}</Project>
+      <Name>qa_auth_client</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\plugin\auth\qa_auth_interface.vcxproj">
+      <Project>{B24CC737-A216-37A8-A78C-4805D6F114E4}</Project>
+      <Name>qa_auth_interface</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\plugin\auth\qa_auth_server.vcxproj">
+      <Project>{5E342595-6B43-3D25-A37C-219A95538298}</Project>
+      <Name>qa_auth_server</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\mysys\queues.vcxproj">
+      <Project>{BFE718D8-29AB-34AE-9342-8F5CE8080A30}</Project>
+      <Name>queues</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\regex\re.vcxproj">
+      <Project>{236B6A45-93ED-35A0-8C5F-E94309E14545}</Project>
+      <Name>re</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\regex\regex.vcxproj">
+      <Project>{4528DF63-880B-3205-8C23-E07CAC972E3A}</Project>
+      <Name>regex</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\extra\replace.vcxproj">
+      <Project>{29C9C249-6C4F-3F78-8699-8F9168323477}</Project>
+      <Name>replace</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\plugin\replication_observers_example\replication_observers_example.vcxproj">
+      <Project>{ED9DF2E9-FD60-3F3A-BAC3-E872F0FC634A}</Project>
+      <Name>replication_observers_example</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\extra\resolveip.vcxproj">
+      <Project>{9C7E6DD1-4AB5-364A-9728-AD6B637F2E69}</Project>
+      <Name>resolveip</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\plugin\rewrite_example\rewrite_example.vcxproj">
+      <Project>{B1C44529-5A1E-379D-A93E-20E5509EAF9E}</Project>
+      <Name>rewrite_example</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\plugin\rewriter\rewriter.vcxproj">
+      <Project>{2D0B82A2-9A34-3457-BF92-BB3C9D7500C9}</Project>
+      <Name>rewriter</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\sql\rpl.vcxproj">
+      <Project>{6B749AA9-6F3F-3CD1-A8B6-236D1A45B7FB}</Project>
+      <Name>rpl</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\plugin\semisync\semisync_master.vcxproj">
+      <Project>{6C5B4A30-6A11-3706-94D4-ED0A34C3AEE5}</Project>
+      <Name>semisync_master</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\plugin\semisync\semisync_slave.vcxproj">
+      <Project>{A5E6EEBA-0A35-32BF-8232-43318672069A}</Project>
+      <Name>semisync_slave</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\unittest\examples\simple-t.vcxproj">
+      <Project>{494BE169-1D76-3D1E-B360-D7E748F3C824}</Project>
+      <Name>simple-t</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\unittest\examples\skip-t.vcxproj">
+      <Project>{ABB7D60F-01F1-3BD2-8845-FF1656FC4329}</Project>
+      <Name>skip-t</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\unittest\examples\skip_all-t.vcxproj">
+      <Project>{F22082AF-EBB5-3BCB-9CEF-C459C11773E1}</Project>
+      <Name>skip_all-t</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\sql\slave.vcxproj">
+      <Project>{EFF61847-6B2D-339B-980A-AF641959B46D}</Project>
+      <Name>slave</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\sql\sql.vcxproj">
+      <Project>{E7967AF8-FBDA-3FDF-AA4D-20D809024DCB}</Project>
+      <Name>sql</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\libmysqld\sql_embedded.vcxproj">
+      <Project>{A6A85DD1-A533-3054-9547-DB48EFF3DB30}</Project>
+      <Name>sql_embedded</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\sql\sqlgunitlib.vcxproj">
+      <Project>{09520DD2-BF50-314A-8ABA-04F16DB7E590}</Project>
+      <Name>sqlgunitlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\strings\strings.vcxproj">
+      <Project>{1B4C452E-9E93-3C8B-BB65-348FC6A33D3F}</Project>
+      <Name>strings</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\plugin\test_services\test_framework.vcxproj">
+      <Project>{A95E395A-4868-3215-AF71-A1F2D26617B9}</Project>
+      <Name>test_framework</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\plugin\audit_null\test_security_context.vcxproj">
+      <Project>{F52A4A54-B04F-34C9-A829-CD8E2F9D4CDB}</Project>
+      <Name>test_security_context</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\plugin\test_services\test_services.vcxproj">
+      <Project>{E4BF84E5-4726-3545-9F65-22BBB71FB3D9}</Project>
+      <Name>test_services</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\plugin\test_services\test_services_thread.vcxproj">
+      <Project>{641E0A21-C831-3545-BC99-7575D20DBA13}</Project>
+      <Name>test_services_thread</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\plugin\test_service_sql_api\test_session_detach.vcxproj">
+      <Project>{BEA56833-F6F7-3818-A1A4-3180D8C2C8B0}</Project>
+      <Name>test_session_detach</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\plugin\test_service_sql_api\test_session_in_thd.vcxproj">
+      <Project>{E93DCD8D-8161-3E8E-A55C-230CCEE8BA1A}</Project>
+      <Name>test_session_in_thd</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\plugin\test_service_sql_api\test_session_info.vcxproj">
+      <Project>{2A33D467-8644-39E2-B809-403770EFA0C1}</Project>
+      <Name>test_session_info</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\plugin\test_service_sql_api\test_sql_2_sessions.vcxproj">
+      <Project>{0C7243FA-31C8-3FDD-8622-1CAE18119331}</Project>
+      <Name>test_sql_2_sessions</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\plugin\test_service_sql_api\test_sql_all_col_types.vcxproj">
+      <Project>{13549E37-802B-39C8-B7F1-84CD6892861A}</Project>
+      <Name>test_sql_all_col_types</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\plugin\test_service_sql_api\test_sql_cmds_1.vcxproj">
+      <Project>{1C6BB1F8-5240-30F9-A866-55BB7BE1E78A}</Project>
+      <Name>test_sql_cmds_1</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\plugin\test_service_sql_api\test_sql_commit.vcxproj">
+      <Project>{C1BF9942-576B-3E97-8B4C-E98738FAB79E}</Project>
+      <Name>test_sql_commit</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\plugin\test_service_sql_api\test_sql_complex.vcxproj">
+      <Project>{4D13932C-C62A-3791-BBEF-1A66315A9A7B}</Project>
+      <Name>test_sql_complex</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\plugin\test_service_sql_api\test_sql_errors.vcxproj">
+      <Project>{16428D1C-10C1-3919-A807-799FBD5AC8D7}</Project>
+      <Name>test_sql_errors</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\plugin\test_service_sql_api\test_sql_lock.vcxproj">
+      <Project>{06216EFC-0218-3368-A2E6-E1AEC211D70F}</Project>
+      <Name>test_sql_lock</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\plugin\test_service_sql_api\test_sql_processlist.vcxproj">
+      <Project>{92DE8E3C-EE6D-30D2-AC91-83A5262663A5}</Project>
+      <Name>test_sql_processlist</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\plugin\test_service_sql_api\test_sql_replication.vcxproj">
+      <Project>{6C46201B-5CB4-35BF-AAB7-F5F92FA594B8}</Project>
+      <Name>test_sql_replication</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\plugin\test_service_sql_api\test_sql_shutdown.vcxproj">
+      <Project>{887DCF2C-30D1-39CC-B5E7-2F04E61E2861}</Project>
+      <Name>test_sql_shutdown</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\plugin\test_service_sql_api\test_sql_sqlmode.vcxproj">
+      <Project>{68EE779E-91E9-3207-BD9B-7D17E2082084}</Project>
+      <Name>test_sql_sqlmode</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\plugin\test_service_sql_api\test_sql_stored_procedures_functions.vcxproj">
+      <Project>{AA17BFC7-E263-3237-B744-CDD923EFB24E}</Project>
+      <Name>test_sql_stored_procedures_functions</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\plugin\test_service_sql_api\test_sql_views_triggers.vcxproj">
+      <Project>{ABBBFBD3-CEE9-3053-B011-FACC9C0A4E25}</Project>
+      <Name>test_sql_views_triggers</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\plugin\udf_services\test_udf_services.vcxproj">
+      <Project>{F6A87802-286D-348C-9351-86E66ABCA6A9}</Project>
+      <Name>test_udf_services</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\plugin\test_service_sql_api\test_x_sessions_deinit.vcxproj">
+      <Project>{1B3C88F3-7708-3BFE-8087-7AB670C5A6ED}</Project>
+      <Name>test_x_sessions_deinit</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\plugin\test_service_sql_api\test_x_sessions_init.vcxproj">
+      <Project>{BB146930-431C-38F9-A362-1EB1F39099ED}</Project>
+      <Name>test_x_sessions_init</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\mysys\thr_lock.vcxproj">
+      <Project>{AAD2B120-2F08-3111-9A56-D82DB32627B6}</Project>
+      <Name>thr_lock</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\unittest\examples\todo-t.vcxproj">
+      <Project>{656F3B47-E105-3D1C-9889-F353A1B5C745}</Project>
+      <Name>todo-t</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\sql\udf_example.vcxproj">
+      <Project>{0A60753E-6A0E-3A12-BFBD-22F6DB0BD09B}</Project>
+      <Name>udf_example</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\plugin\password_validation\validate_password.vcxproj">
+      <Project>{727384EE-BDA1-3DAB-BE60-978DE458ED49}</Project>
+      <Name>validate_password</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\plugin\version_token\version_token.vcxproj">
+      <Project>{C5BB16A8-AEA2-33F3-93BD-434F64DDF8F9}</Project>
+      <Name>version_token</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\vio\vio.vcxproj">
+      <Project>{9F4D9FB1-61EB-3CC5-AE48-C2E91469AD04}</Project>
+      <Name>vio</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\extra\zlib\zlib-1.2.13\zlib.vcxproj">
+      <Project>{70BDDF14-00CC-323C-8142-8AD5BD706A6A}</Project>
+      <Name>zlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\build-cmake\extra\zlib_decompress.vcxproj">
+      <Project>{AF5F0E93-3276-3E02-84D2-E0CB9477C1BB}</Project>
+      <Name>zlib_decompress</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

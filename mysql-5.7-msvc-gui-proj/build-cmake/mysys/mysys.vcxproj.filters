@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\array.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\charset-def.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\charset.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\checksum.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\errors.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\hash.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\list.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\mf_cache.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\mf_dirname.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\mf_fn_ext.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\mf_format.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\mf_getdate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\mf_iocache.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\mf_iocache2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\mf_keycache.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\mf_keycaches.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\mf_loadpath.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\mf_pack.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\mf_path.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\mf_qsort.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\mf_qsort2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\mf_radix.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\mf_same.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\mf_soundex.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\mf_arr_appstr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\mf_tempfile.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\mf_unixpath.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\mf_wcomp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\mulalloc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_access.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_alloc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_bit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_bitmap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_chsize.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_compress.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_copy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_create.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_delete.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_div.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_error.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_file.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_fopen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_fstream.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_gethwaddr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_getsystime.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_getwd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_compare.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_lib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_lock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_malloc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_mess.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_mkdir.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_mmap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_once.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_open.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_pread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_read.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_redel.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_rename.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_seek.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_static.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_symlink.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_symlink2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_sync.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_thr_init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_write.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\ptr_cmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\queues.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\sql_chars.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\stacktrace.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\string.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\thr_cond.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\thr_lock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\thr_mutex.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\thr_rwlock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\tree.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\typelib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\base64.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_memmem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\lf_alloc-pin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\lf_dynarray.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\lf_hash.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_rdtsc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\psi_noop.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_syslog.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_chmod.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_thread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_conio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_windac.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_winerr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\my_winfile.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\win_timers.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj\mysys\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B161803E-881F-3A92-9940-CE96C4C0691D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
