@@ -12,7 +12,7 @@ cd /d D:\proj\github\lukezhang-123\database-mysql\mysql-5.7-msvc-gui-proj
 mkdir build-cmake
 cd build-cmake
 cmake .. -DWITH_BOOST=..\boost\boost_1_59_0
-vs 打开 MySQL.sln
+vs 打开 MySQL.sln 195个项目
 
 #include "functional"  // std::binary_function
 sql\json_dom.h
