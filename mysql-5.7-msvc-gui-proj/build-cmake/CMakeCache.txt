@@ -216,9 +216,6 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 //Set to true if this is a community build
 COMMUNITY_BUILD:BOOL=ON
 
-//No help, variable specified on the command line.
-CPACK_MONOLITHIC_INSTALL:UNINITIALIZED=1
-
 //Path to a library.
 CRYPTO_LIBRARY:FILEPATH=C:/Program Files/OpenSSL-Win64/lib/libcrypto_static.lib
 
