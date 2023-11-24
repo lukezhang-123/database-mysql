@@ -1,5 +1,6 @@
 ﻿.vs
 _CPack_Packages
+build-cmake
 
 CMakeFiles
 mysql-5.7-msvc-gui-proj/build-cmake/**/*.lib
