@@ -222,6 +222,9 @@ IF(MSVC)
   STRING_APPEND(CMAKE_CXX_FLAGS " /permissive-")
 ENDIF()
 
+STRING_APPEND(CMAKE_C_FLAGS   " /utf-8")
+STRING_APPEND(CMAKE_CXX_FLAGS " /utf-8")
+
 # Always link with socket library
 LINK_LIBRARIES(ws2_32)
 # ..also for tests
