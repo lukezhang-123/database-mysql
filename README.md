@@ -53,11 +53,13 @@
 
     ![](README/2024-03-20-20-17-58.png)
 
-5. mysql-5.7.44源码目录400MB，编译耗时5min  编译后7.7GB，编译完成结果
+5. 在最上面的解决方案右键，第一个生成解决方案，会安装设定的依赖顺序，编译全部项目组件，195个
 
     ![](README/2024-03-20-20-25-15.png)
 
-6. 中间报错结果
+6. mysql-5.7.44源码目录400MB，编译耗时5min  编译后7.7GB，编译完成结果
+
+7. 中间报错结果
 
     ![](README/2024-03-20-20-03-56.png)
 
@@ -92,3 +94,59 @@ devenv MySQL.sln /build Debug /project package
 执行install项目，C:/Program Files (x86)/MySQL/，需要权限
 devenv MySQL.sln /build Debug /project install
 ```
+
+
+## mysql 8.0.35 构建项目工程
+
+### 源码下载
+
+https://cdn.mysql.com/Downloads/MySQL-8.0/mysql-boost-8.0.35.tar.gz
+
+### 构建过程
+
+1. bison >= 3.0.4
+2. 执行cmake，生成vs2022工程文件
+```
+  cd {directory}/database-mysql/mysql-5.7.44
+
+   mkdir build-cmake
+   cd build-cmake
+   cmake .. -DWITH_BOOST=..\boost\boost_1_77_0
+
+```
+![](README/2024-03-20-20-45-15.png)
+
+3. 打开`{directory}/database-mysql/mysql-8.0.35/build-cmake/MySQL.sln` 
+
+项目
+innodb_zipdecompress
+merge_small_tests-t
+merge_innodb_tests-t
+component_test_string_service_charset
+sql_main
+innobase
+加 /utf-8
+
+4. 在vs2022 IDE内编译, 在最上面的解决方案右键，第一个生成解决方案，开始编译整个项目，918个项目，编译完成结果
+
+![](README/2024-03-20-21-21-20.png)
+
+5. 其他
+   
+    mysql-8.0.35源码目录1.07GB，编译耗时40min  编译后26.6GB
+
+    build-cmake目录25G，debug模式
+
+    PACKAGE项目，右键生成会打包`mysql-8.0.35-winx64.zip` , 712M  debug模式，带pdb和lib调试
+
+6. 问题
+
+    ```
+    错误 MSB3491 未能向文件“XXX”写入命令行完全限定的文件名必须少于 260 个字符
+
+    HKLM\SYSTEM\CurrentControlSet\Control\FileSystem
+    LongPathsEnabled 值该为 1
+    重启vs
+    ```
+
+7. 有趣的发现，`mysql-8.0.35\components\example\test_string_service_charset.cc#L173`  # 源码里测试用的字符，遥想公瑾当年，小乔初嫁了，雄姿英发
