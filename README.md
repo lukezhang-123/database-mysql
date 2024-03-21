@@ -118,14 +118,15 @@ https://cdn.mysql.com/Downloads/MySQL-8.0/mysql-boost-8.0.35.tar.gz
 
 3. 打开`{directory}/database-mysql/mysql-8.0.35/build-cmake/MySQL.sln` 
 
-项目
+找到下面这些项目，右键，最后一个属性，添加编译选项 `/utf-8`
+```
 innodb_zipdecompress
 merge_small_tests-t
 merge_innodb_tests-t
 component_test_string_service_charset
 sql_main
 innobase
-加 /utf-8
+```
 
 4. 在vs2022 IDE内编译, 在最上面的解决方案右键，第一个生成解决方案，开始编译整个项目，918个项目，编译完成结果
 
